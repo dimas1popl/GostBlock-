@@ -15,7 +15,6 @@ import net.minecraft.world.GameMode;
 import net.creater120.ghostblock.client.GhostblockClient;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.LoreComponent;
-import net.minecraft.component.type.UnbreakableComponent;
 
 import java.util.ArrayList;
 import java.util.List;

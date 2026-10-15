@@ -13,6 +13,7 @@ import net.minecraft.entity.vehicle.MinecartEntity;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.creater120.ghostblock.client.GhostblockClient;
 import org.lwjgl.glfw.GLFW;
@@ -22,6 +23,9 @@ public class KeybindingManager {
     private static boolean wasUnpressed = true;
     private static boolean wasContinuousUnpressed = true;
     private static boolean continuousActive = false;
+
+    public static final KeyBinding.Category GHOSTBLOCK_CATEGORY =
+            KeyBinding.Category.create(Identifier.of("ghostblock", "ghostblock"));
 
     public static KeyBinding placeBlockKeyBinding;
     public static KeyBinding continuousPlaceKeyBinding;
@@ -33,7 +37,7 @@ public class KeybindingManager {
                         "key.ghostblock.place_block",
                         InputUtil.Type.KEYSYM,
                         GLFW.GLFW_KEY_V,
-                        "key.category.ghostblock"
+                        GHOSTBLOCK_CATEGORY
                 )
         );
 
@@ -42,7 +46,7 @@ public class KeybindingManager {
                         "key.ghostblock.continuous_place",
                         InputUtil.Type.KEYSYM,
                         GLFW.GLFW_KEY_GRAVE_ACCENT,
-                        "key.category.ghostblock"
+                        GHOSTBLOCK_CATEGORY
                 )
         );
 
@@ -51,7 +55,7 @@ public class KeybindingManager {
                         "key.ghostblock.remove_all",
                         InputUtil.Type.KEYSYM,
                         GLFW.GLFW_KEY_R,
-                        "key.category.ghostblock"
+                        GHOSTBLOCK_CATEGORY
                 )
         );
 

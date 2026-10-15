@@ -101,10 +101,10 @@ import java.util.Map;
                     BlockState state = block.getDefaultState();
 
                     if (GhostblockClient.originalStates.get(pos) == null) {
-                        GhostblockClient.originalStates.put(pos, player.clientWorld.getBlockState(pos));
+                        GhostblockClient.originalStates.put(pos, player.getEntityWorld().getBlockState(pos));
                     }
 
-                    player.clientWorld.setBlockState(pos, state);
+                    player.getEntityWorld().setBlockState(pos, state);
                     GhostblockClient.ghostBlocks.put(pos, state);
                     loaded++;
                 }

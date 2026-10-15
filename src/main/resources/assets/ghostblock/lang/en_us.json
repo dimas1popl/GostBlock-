@@ -1,5 +1,7 @@
 {
   "key.category.ghostblock": "GhostBlock",
+  "key.category.ghostblock.ghostblock": "GhostBlock",
   "key.ghostblock.place_block": "Place Ghost Block",
-  "key.ghostblock.continuous_place": "Continuous Ghost Block Bridge"
+  "key.ghostblock.continuous_place": "Continuous Ghost Block Bridge",
+  "key.ghostblock.remove_all": "Remove All Ghost Blocks"
 }
