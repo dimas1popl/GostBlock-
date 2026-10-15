@@ -1,0 +1,36 @@
+/clientgive acacia_button
+/clientgive bedrock
+/clientfill 100 100 1 acacia_leaves
+/clientundo
+/clientundo 1
+/clientundo 10000
+/clientsaveschematic d
+/clientloadschematic
+/clientloadschematic d
+/ghostsettings
+/clientgive acacia_leaves
+/ghostsettings
+/clientgive acacia_leaves
+/effect give @s minecraft:levitation 2 60
+/effect give @s minecraft:levitation 2 60`
+/effect give @s minecraft:levitation 2 60
+/clientgive acacia_leaves
+/effect give @s minecraft:levitation 2 60
+/ghostgive acacia_leaves
+/ghostfill 10 10 10 acacia_boat
+/ghostfill 10 10 10 acacia_door
+/clientgive blue_ice 100
+/clientgivesuperfake acacia_door
+/clientgivesuperfake acacia_door 1
+/ghostgive blue_ice
+/ghostenchant efficiency 10
+/ghostlore 10
+/ghostlore я пидор
+/ghostgive iron_axe
+/ghostgive blue_ice
+/effect give @s minecraft:speed infinite 10
+/effect give @s minecraft:speed infinite 100
+/summon minecraft:oak_boat
+/setblock ~ ~ ~ dirt
+/ghostgive rail
+/ghostgive blue_ice
